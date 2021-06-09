@@ -9,11 +9,11 @@ const moocscards = [
     cardImage: "assets/images/education-page/coursera1.png",
     moocLink: "https://www.coursera.org/browse/data-science",
   },
-  {
-    title: "Cryptography",
-    cardImage: "assets/images/education-page/udemy.png",
-    moocLink: "https://www.udemy.com/course/cryptography-for-beginners/",
-  },
+  // {
+  //   title: "Cryptography",
+  //   cardImage: "assets/images/education-page/udemy.png",
+  //   moocLink: "https://www.udemy.com/course/cryptography-for-beginners/",
+  // },
   {
     title: "Machine Learning",
     cardImage: "assets/images/education-page/coursera1.png",
@@ -39,16 +39,16 @@ const moocscards = [
     cardImage: "assets/images/education-page/udemy.png",
     moocLink: "https://www.udemy.com/course/bootstrap-4-tutorials/",
   },
-  {
-    title: "Intro to React",
-    cardImage: "assets/images/education-page/EdX.png",
-    moocLink: "https://www.edx.org/learn/reactjs",
-  },
-  {
-    title: "Intro to React Native",
-    cardImage: "assets/images/education-page/coursera1.png",
-    moocLink: "https://www.coursera.org/lecture/react-native/introduction-to-react-native-Eax0D",
-  },
+  // {
+  //   title: "Intro to React",
+  //   cardImage: "assets/images/education-page/EdX.png",
+  //   moocLink: "https://www.edx.org/learn/reactjs",
+  // },
+  // {
+  //   title: "Intro to React Native",
+  //   cardImage: "assets/images/education-page/coursera1.png",
+  //   moocLink: "https://www.coursera.org/lecture/react-native/introduction-to-react-native-Eax0D",
+  // },
   {
     title: "NodeJS, Express and MongoDB",
     cardImage: "assets/images/education-page/coursera1.png",
@@ -176,12 +176,11 @@ document.addEventListener("DOMContentLoaded", showCards1);
 const timeline = document.querySelector(".timeline");
 const timelinesection = [
   {
-    heading: "Massachusetts Institute of Technology",
+    heading: "Netaji Subhash University Of Technology",
     image: "./assets/images/education-page/timeline-1.svg",
     subheading: "Bachelors of Science, Computer Science & Engineering, (2020-2024)",
     description: "<li>Top 1% in the department</li><li>Best undergraduate Reseracher</li><li>Betsy Schumacker Woman</li><li>Athlete of the Year Award</li>",
   },
-
   {
     heading: "Massachusetts Institute of Technology",
     image: "./assets/images/education-page/timeline-1.svg",

@@ -20,7 +20,7 @@
 
     <!-- Open Graph for Social Media -->
     <meta property="og:site_name" content="https://portfolio.smaranjitghose.codes/projects.html"/>
-    <meta property="og:title" content="John Doe | Projects" />
+    <meta property="og:title" content="TARUN BARTHWAL| Projects" />
     <meta property="og:description" content="This project serves as a free and beautiful portfolio template for everyone who needs the perfect portfolio. Anyone can showcase their work including moocs, education, projects, experience,etc. to the world."/>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://portfolio.smaranjitghose.codes/projects.html" />
@@ -309,29 +309,56 @@
                 </g>
               </svg>
             </div>
-            <div
+             <div
               class="dropdown col-md-6 d-flex mt-5 flex-column text-center justify-content-center animate__animated animate__zoomIn animate__delay-1s"
             >
-              <h2 class="main-heading mb-0">Projects</h2>
-              <p
-                class="pre-heading font-weight-bolder"
-                class="mb-0 mt-3 text-center animate__animated animate__zoomIn animate__delay-2s"
-              >
-                My projects makes use of vast variety of latest technology
-                tools. My best experience is to create Data Science projects and
-                deploy them to web applications using cloud infrastructure.
-              </p>
+              
+
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-14">
+                      <h3 class="progress-title">FULL-Stack Developer(MERN-Stack)<span>80</span>%</h3>
+                      <div class="progress">
+                          <div class="progress-bar" style="width:80%; background:#3d99f9;"></div>
+                      </div>
+                      <h3 class="progress-title">C++ | Python <span>70</span>%</h3>
+                      <div class="progress">
+                          <div class="progress-bar" style="width:70%; background:#f7b263;"></div>
+                      </div>
+                      <h3 class="progress-title">Deep learning & NLP <span>62</span>%</h3>
+                      <div class="progress">
+                          <div class="progress-bar" style="width:60%; background:#deeb11;"></div>
+                      </div>
+                      <h3 class="progress-title">Electronics Design <span>89</span>%</h3>
+                      <div class="progress">
+                          <div class="progress-bar" style="width:89%; background:#b30404;"></div>
+                      </div>
+                      <h3 class="progress-title">PCB Designing <span>77</span>%</h3>
+                      <div class="progress">
+                          <div class="progress-bar" style="width:77%; background:#e251b7;"></div>
+                      </div>
+                      <h3 class="progress-title">MATLAB <span>68</span>%</h3>
+                      <div class="progress">
+                          <div class="progress-bar" style="width:68%; background:#0d0e00;"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+              
             </div>
           </div>
         </div>
       </section>
-    </div>
+    </div> -->
 
-    <div class="project-box">
-      <div class="row page-content projectcards">
+    <!-- <div class="project-box">
+      <div class="row page-content projectcards"> -->
         <!-- Dynamic project card -->
-      </div>
-    </div>
+      <!-- </div>
+    </div> -->
 
     <!-- Dynamic footer section -->
 
@@ -340,6 +367,112 @@
     <script src="assets/js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="assets/js/project.js"></script>
+    <script src="assets/js/project.js">
+    
+    
+    
+    
+    
+    
+    </script>
+    <script src="https://pagead2.googlesyndication.com/pagead/js/r20210601/r20190131/show_ads_impl_fy2019.js" id="google_shimpl"></script><script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+
+$(document).ready(function(){
+    $('.progress-title > span').each(function(){
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        },{
+            duration: 1500,
+            easing: 'swing',
+            step: function (now){
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+});
+    </script>
+
+<style>
+
+ 
+
+
+.progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 20px;
+}
+.progress{
+  margin-top: -12px;
+    height:10px;
+    background: #d4d7e6;
+    border-radius: 30px;
+    box-shadow: none;
+    margin-bottom: 30px;
+    margin-right: -300px;
+    overflow: visible;
+}
+@media only screen and (max-width: 600px) {
+  .progress {
+
+    margin-top: -20px;
+    width: 300px;
+  }
+  .progress-title{
+    margin-top: -1px;
+    margin-right: -10px;
+    font-weight: 300;
+
+
+  }
+  .svgmate{
+    height: 0px;
+  }
+  .col-md-14{
+    margin-top:-40px;
+  }
+}
+.progress .progress-bar{
+    border-radius: 30px;
+    box-shadow: none;
+    position: relative;
+    overflow: visible;
+
+    animation: animate-positive 4s;
+}
+.progress .progress-bar:before{
+    content: "";
+    width: 100%;
+    height: 50%;
+    background: rgba(0,0,0,0.3);
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    overflow: visible;
+    left: 0;
+    z-index: 2;
+}
+.progress .progress-bar:after{
+    content: "";
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #cbcbcb;
+    border: 8px solid #000;
+    position: absolute;
+    bottom: -8px;
+    overflow: visible;
+
+    right: 0;
+    z-index: 1;
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+
+</style>
+
   </body>
 </html>

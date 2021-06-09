@@ -2,7 +2,7 @@
 
 let header = $(`
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-<a class="navbar-brand" href="index.html">John Doe </a>
+<a class="navbar-brand" href="index.html">Tarun Barthwal </a>
 <div class="hamburger_wrapper navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
 
   <div id="js-hamburger" class="hamburger">
@@ -13,13 +13,15 @@ let header = $(`
 
 </div>
 
-<div class="collapse navbar-collapse " id="navbarSupportedContent">
-  <ul class="navbar-nav ml-auto" id = "navbar-content">
-   <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-   <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
-   <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-   <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+<div style="margin-right:470px" class="collapse navbar-collapse " id="navbarSupportedContent">
+  <ul style="margin:-left:30px" class="navbar-nav ml-auto" id = "navbar-content">
+   <li  class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+
+   <li  class="nav-item"><a class="nav-link" href="experience.html">Projects</a></li>
+   <li class="nav-item"><a class="nav-link" href="projects.html">Skills</a></li>
+   <li class="nav-item"><a class="nav-link" href="research.html">Get in Touch</a></li>
+
    <div class="bike">
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 0 650 400" preserveAspectRatio="xMinYMin meet"> 
      <rect/>

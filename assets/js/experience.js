@@ -4,50 +4,85 @@
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Software Development Intern",
+    title: "IDIOT-BOX",
+    link:"https://frozen-citadel-58286.herokuapp.com/",
+    Githublink:"https://github.com/tarun744/idiot-box",
     cardImage: "assets/images/experience-page/flipkart.jpg",
-    place: "Flipkart",
-    time: "(May, 2020 - present)",
-    desp: "<li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
+    place: "Movie Downloading Website",
+    time: "(Live - present)",
+    desp: "<li>Developed a movie website using Node.js for backend, used MongoDB as database and deployed using Amazon Web Services.</li> <li> I had used CSS, SCSS, Bootstrap and javascript to make it more attractive and responsive.</li> <li>Implemented Search to find a particular movie with given keyword.</li>",
   },
   {
-    title: "Student Developer",
-    cardImage: "assets/images/experience-page/gsoc.png",
-    place: "Google Summer Of Code",
+    title: "T-90 Tank",
+    link:"https://github.com/tarun744/Mobile-Controlled-Tank",
+    Githublink:"https://github.com/tarun744/Mobile-Controlled-Tank",
+    cardImage: "assets/images/experience-page/t.png",
+    place: "Mobile Controlled Tank",
     time: "(Mar - Aug, 2019)",
-    desp: "<li>Worked with MOZILLA as a part of Google Summer Of Code.</li><li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions.</li>",
+    desp: "<li>Developed a fully functional T-90 tank with Nodemcu as controller used Arduino C++ as the working code which develops local server and an IP Address for user to control the tank. .</li><li> Controller(Node Mcu) is the key which directs the tank to move in forward backward left and right direction.</li>",
   },
   {
-    title: "Research Intern",
-    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
-    place: "IIT, Bombay",
+    title: "Virtual Mouse",
+    link:"https://github.com/tarun744/Virtual-Mouse",
+    Githublink:"https://github.com/tarun744/Virtual-Mouse",
+    cardImage: "assets/images/experience-page/AI-Virtual-Mouse.jpg",
+    place: "OpenCV Python | Computer Vision",
     time: "(Dec, 19 - Jan, 20)",
-    desp:"<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
+    desp:"<li>In this project, I have created a Virtual Mouse Controller. Which will first detect the hand landmarks and then track and click based on these points.</li><li>I have applied smoothing techniques to stabilize the cursor</li><li>I have used Computer vision's OpenCv and Mediapipe library</li>",
+  },
+  {
+    title: "Gideon",
+    link:"https://github.com/tarun744/Gideon-Voice-Controlled-Assistant.git",
+    Githublink:"https://github.com/tarun744/Gideon-Voice-Controlled-Assistant.git",
+    cardImage: "assets/images/experience-page/gideon.jfif",
+    place: "Tensor-Flow | NLTK",
+  
+    desp:"<li>In this project, I have created Gideon is a voice controlled personal assistant bot aims to ease the access of operating laptop/pc features and functions.</li><li>It uses Google's Speech to Text Recognition to interact with user</li>",
   },
 ];
 
 const showCards2 = () => {
   let output = "";
   exp.forEach(
-    ({ title, cardImage, place, time, desp }) =>
+    ({ title, cardImage, place, time, desp,link,
+    Githublink }) =>
       (output += `        
-      <ul>
+      <ul style="margin-top:60px;" >
+      
       <li class="card card1">
-        <img src="${cardImage}" class="featured-image"/>
+      
+      
+        <img href="${link}" src="${cardImage}" class="featured-image"/>
+        
+        <a href="${link}" target="_blank">
         <article class="card-body">
-          <header>
-            <div class="title">
-              <h3>${title}</h3>
+        
+          <header >
+          
+            <div class="title" >
+            
+
+              <h3>${title} <a style="margin-left:400px;"href="${Githublink} " target="_blank" <i class="fab fa-github"></i>
+
+              </a> </h3>
+              
+              
+             
             </div>
             <p class="meta">
               <span class="pre-heading">${place}</span><br>
               <span class="author">${time}</span>
             </p>
+            
+           
             <ol>
               ${desp}
             </ol>
+           
+            
           </header>
         </article>
+        </a>
       </li>
     </ul>
       `)
@@ -62,48 +97,55 @@ document.addEventListener("DOMContentLoaded", showCards2);
 const volunteership = document.querySelector(".volunteership");
 const volunteershipcards = [
   {
-    title: "GirlScript Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/1.jpg",
+    title: "Catch me if u Can",
+    link:"https://catch-steam.surge.sh",
+    cardImage: "assets/images/experience-page/catch.jfif",
     description:
-      "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
+      "Catch me if u Can game to catch the text in screen using mouse",
   },
   {
-    title: "StudentCode-in 2020",
-    cardImage: "assets/images/experience-page/2.jpg",
+    title: "Insecto",
+    link:"http://gaudy-doctor.surge.sh//",
+    cardImage: "assets/images/experience-page/maxresdefault.jpg",
     description:
-      "Responsible for handling open source contributions for the project Awesome Developer Portfolio.",
+      "Insect Game of finding a particular insect in given time. I have used basic html, css , js",
   },
   {
-    title: "PClub Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/3.jpg",
+    title: "Snake-salt",
+    link:"http://snake-salt.surge.sh/",
+    cardImage: "assets/images/experience-page/snake.jfif",
     description:
-      "Mentoring for the projects Deep Pixel, AutoVaidya, Just Resume and Doc2pen.",
+      "Developed a Snake game fully based on java-script",
   },
   {
-    title: "Hakin-Codes",
-    cardImage: "assets/images/experience-page/4.jpg",
+    title: "Tic-tac-toe",
+    link:"https://tic-tac-duck.surge.sh/",
+    cardImage: "assets/images/experience-page/tic.png",
     description:
-      "Mentoring for the open source projects Deeppixel, Awesome Developer Portfolios and Doc2Pen.",
+      "Tic-Tac-TOe Game mobile and pc comptaible.",
   },
   {
-    title: "30 DaysofFlutter",
-    cardImage: "assets/images/experience-page/5.jpg",
+    title: "Adventure-Island",
+    link:"http://adventure-string.surge.sh/",
+    cardImage: "assets/images/experience-page/adv.jfif",
     description:
-      "Helping beginners from their first steps in Flutter to building fully functional cross-platform applications.",
+      "Adventure text based game of going in a story",
   },
   {
-    title: "Garuda Hacks",
-    cardImage: "assets/images/experience-page/6.jpg",
+    title: "Music Hacks",
+    link:"https://music-polish.surge.sh",
+    cardImage: "assets/images/experience-page/mus.jpg",
     description:
-      "MLH sponsored Indonesia's premier Global Virtual Hackathon on 14 - 16th August 2020.",
+      "Music based text Game",
   },
 ];
 
 const showCards = () => {
   let output = "";
   volunteershipcards.forEach(
-    ({ title, cardImage, description }) =>
-      (output += `        
+    ({ title, cardImage, description,link }) =>
+      (output += `
+      <a href="${link}"target="_blank">        
       <div class="card volunteerCard" style="height: 600px;width:400px">
       
       <img src="${cardImage}" height="300" width="65" class="card-img" style="border-radius:10px">
@@ -112,6 +154,7 @@ const showCards = () => {
           <p class="copy">${description}</p></div>
       
       </div>
+      </a>
       `)
   );
   volunteership.innerHTML = output;
